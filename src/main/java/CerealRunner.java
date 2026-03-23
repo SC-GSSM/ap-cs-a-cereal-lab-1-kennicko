@@ -38,7 +38,7 @@ public class CerealRunner
     double cups = (double)cereal[4]; 
 
                 // create a new Cereal object, and add it to the ArrayList
-                cereals.add(new Cereal(name,calories,fiber,carbohydrates,cups))
+                cereals.add(new Cereal(name,calories,fiber,carbohydrates,cups));
 
             }
             scan.close();
