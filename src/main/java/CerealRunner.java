@@ -7,12 +7,13 @@ import java.io.FileReader;
 public class CerealRunner
 {
     // create a private instance variable to store an ArrayList of Cereal objects
+    private ArrayList<Cereal> cereals;
 
     public CerealRunner(String fileName)
     {
         // instantiate the ArrayList
 
-        ArrayList<Cereal> cereals = new ArrayList<Cereal>();
+        cereals = new ArrayList<Cereal>();
 
         try
         {
