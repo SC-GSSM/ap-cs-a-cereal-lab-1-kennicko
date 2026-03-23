@@ -12,6 +12,8 @@ public class CerealRunner
     {
         // instantiate the ArrayList
 
+        ArrayList<Cereal> cereals = ArrayList<Cereal>();
+
         try
         {
             FileReader fileRdr = new FileReader(fileName);
@@ -23,11 +25,20 @@ public class CerealRunner
                 // use the split method to parse the data into an array of
                 //   String objects
 
+                String[] cereal = myStr.split(",");
+
                 // go through each String array element and save it
                 //   into the appropriate variable which will be used to
                 //   create a Cereal object
 
+                String name = cereal[0];
+                int calories = (int)cereal[1];
+    int fiber = (int)cereal[2];
+    int carbohydrates = (int)cereal[3];
+    double cups = (double)cereal[4]; 
+
                 // create a new Cereal object, and add it to the ArrayList
+                cereals.add(new Cereal(name,calories,fiber,carbohydrates,cups))
 
             }
             scan.close();
