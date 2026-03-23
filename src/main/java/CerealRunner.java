@@ -12,7 +12,7 @@ public class CerealRunner
     {
         // instantiate the ArrayList
 
-        ArrayList<Cereal> cereals = ArrayList<Cereal>();
+        ArrayList<Cereal> cereals = new ArrayList<Cereal>();
 
         try
         {
